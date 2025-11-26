@@ -1,0 +1,37 @@
+2025-11-25 15:23:09 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 15:23:09 - elperuano_scraper - INFO - Fecha actual en Perú: 25/11/2025
+2025-11-25 15:23:09 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-25 15:23:09 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-25 15:23:09 - elperuano_scraper - INFO - Detectando CHROME...
+2025-11-25 15:23:14 - elperuano_scraper - INFO - ✓ CHROME está disponible
+2025-11-25 15:23:20 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-25 15:23:20 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-25 15:23:26 - elperuano_scraper - INFO - Buscando documentos para: 25/11/2025
+2025-11-25 15:23:26 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 25/11/2025
+2025-11-25 15:23:27 - elperuano_scraper - INFO - ✓ Campo cddesde llenado
+2025-11-25 15:23:28 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 25/11/2025
+2025-11-25 15:23:29 - elperuano_scraper - INFO - ✓ Campo cdhasta llenado
+2025-11-25 15:23:30 - elperuano_scraper - INFO - ✓ Botón de búsqueda clickeado
+2025-11-25 15:23:30 - elperuano_scraper - INFO - Esperando resultados...
+2025-11-25 15:23:35 - elperuano_scraper - INFO - ✓ Resultados cargados
+2025-11-25 15:23:37 - elperuano_scraper - INFO - Buscando primer cuadernillo completo...
+2025-11-25 15:23:37 - elperuano_scraper - INFO - ✓ Cuadernillo encontrado: https://epdoc2.elperuano.pe/EpPo/Descarga.asp?Referencias=TkwyMDI1MTEyNQ==
+2025-11-25 15:23:37 - elperuano_scraper - INFO - Descargando PDF...
+2025-11-25 15:23:38 - elperuano_scraper - INFO - ✓ Descarga completa: 20251125.pdf (8.50 MB)
+2025-11-25 15:23:38 - elperuano_scraper - INFO - ============================================================
+2025-11-25 15:23:38 - elperuano_scraper - INFO - ✓ DESCARGA EXITOSA: downloads\20251125.pdf
+2025-11-25 15:23:38 - elperuano_scraper - INFO - ============================================================
+2025-11-25 15:23:38 - elperuano_scraper - INFO - Cerrando navegador...
+2025-11-25 15:23:42 - elperuano_scraper - INFO - ✓ Download completed successfully!
+2025-11-25 15:23:42 - elperuano_scraper - ERROR - ✗ Error uploading to Drive: ❌ No se encontró 'credentials.json' en C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\credentials.json
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 34, in main
+    upload_to_drive(downloaded_file)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\upload_drive.py", line 71, in upload_to_drive
+    service = get_service()
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\upload_drive.py", line 22, in get_service
+    raise FileNotFoundError(
+        f"❌ No se encontró 'credentials.json' en {SERVICE_ACCOUNT_FILE}"
+    )
+FileNotFoundError: ❌ No se encontró 'credentials.json' en C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\credentials.json

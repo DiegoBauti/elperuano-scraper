@@ -1,0 +1,63 @@
+2025-11-25 11:23:31 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 11:23:31 - elperuano_scraper - INFO - Searching for date: 25/11/2025
+2025-11-25 11:23:31 - elperuano_scraper - INFO - Initializing browser...
+2025-11-25 11:23:33 - elperuano_scraper - INFO - Navigating to https://diariooficial.elperuano.pe/Normas
+2025-11-25 11:23:35 - elperuano_scraper - INFO - Filling date inputs with: 25/11/2025
+2025-11-25 11:23:45 - elperuano_scraper - ERROR - Error during scraping: Element not found: input[name='FechaDesde']
+2025-11-25 11:23:45 - elperuano_scraper - INFO - Closing browser
+2025-11-25 11:23:48 - elperuano_scraper - ERROR - Unexpected error: Scraping failed: Element not found: input[name='FechaDesde']
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 62, in _wait_for_element
+    element = WebDriverWait(self.driver, timeout).until(
+        EC.presence_of_element_located((by, selector))
+    )
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 101, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a51ca235
+	0x7ff6a4f22630
+	0x7ff6a4cb16dd
+	0x7ff6a4d0a27e
+	0x7ff6a4d0a58c
+	0x7ff6a4d5ed77
+	0x7ff6a4d5baba
+	0x7ff6a4cfb0ed
+	0x7ff6a4cfbf63
+	0x7ff6a51f5d60
+	0x7ff6a51efe8a
+	0x7ff6a5211005
+	0x7ff6a4f3d71e
+	0x7ff6a4f44e1f
+	0x7ff6a4f2b7c4
+	0x7ff6a4f2b97f
+	0x7ff6a4f118e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 166, in search_and_download
+    self._fill_date_inputs(date)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 74, in _fill_date_inputs
+    from_input = self._wait_for_element(
+        By.CSS_SELECTOR,
+        self.config.INPUT_FROM_SELECTOR
+    )
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 67, in _wait_for_element
+    raise ElementNotFoundError(f"Element not found: {selector}")
+src.exceptions.ElementNotFoundError: Element not found: input[name='FechaDesde']
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 24, in main
+    success = scraper.search_and_download(current_date)
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 178, in search_and_download
+    raise ScraperError(f"Scraping failed: {str(e)}") from e
+src.exceptions.ScraperError: Scraping failed: Element not found: input[name='FechaDesde']
+2025-11-25 11:23:48 - elperuano_scraper - INFO - Scraper finished

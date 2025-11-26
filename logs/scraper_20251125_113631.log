@@ -1,0 +1,21 @@
+2025-11-25 11:36:31 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 11:36:31 - elperuano_scraper - INFO - Searching for date: 25/11/2025
+2025-11-25 11:36:31 - elperuano_scraper - INFO - Initializing browser...
+2025-11-25 11:36:33 - elperuano_scraper - INFO - Navigating to https://diariooficial.elperuano.pe/Normas
+2025-11-25 11:36:37 - elperuano_scraper - INFO - Waiting for page to load...
+2025-11-25 11:36:42 - elperuano_scraper - INFO - Filling date inputs with: 25/11/2025
+2025-11-25 11:36:45 - elperuano_scraper - INFO - Found 'from' date input (cddesde)
+2025-11-25 11:36:47 - elperuano_scraper - INFO - 'From' date filled successfully
+2025-11-25 11:36:47 - elperuano_scraper - INFO - Found 'to' date input (cdhasta)
+2025-11-25 11:36:50 - elperuano_scraper - INFO - 'To' date filled successfully
+2025-11-25 11:36:51 - elperuano_scraper - INFO - Clicking search button
+2025-11-25 11:36:51 - elperuano_scraper - INFO - Found search button (btnBuscar)
+2025-11-25 11:36:52 - elperuano_scraper - INFO - Search button clicked (JavaScript)
+2025-11-25 11:36:57 - elperuano_scraper - INFO - Searching for download button
+2025-11-25 11:37:00 - elperuano_scraper - INFO - Using first PDF link: https://diariooficial.elperuano.pe/pdf/gabinete-ministros.pdf
+2025-11-25 11:37:01 - elperuano_scraper - INFO - Download button clicked (regular click)
+2025-11-25 11:37:01 - elperuano_scraper - INFO - Waiting for download to complete (timeout: 300s)
+2025-11-25 11:37:03 - elperuano_scraper - INFO - Download completed: gabinete-ministros.pdf
+2025-11-25 11:37:03 - elperuano_scraper - INFO - Closing browser
+2025-11-25 11:37:08 - elperuano_scraper - INFO - Download completed successfully!
+2025-11-25 11:37:08 - elperuano_scraper - INFO - Scraper finished

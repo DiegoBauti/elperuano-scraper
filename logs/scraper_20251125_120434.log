@@ -1,0 +1,170 @@
+2025-11-25 12:04:34 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 12:04:34 - elperuano_scraper - INFO - Searching for date: 25/11/2025
+2025-11-25 12:04:37 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-25 12:04:38 - elperuano_scraper - INFO - Esperando carga inicial de la página...
+2025-11-25 12:04:43 - elperuano_scraper - INFO - Buscando documentos para: 25/11/2025
+2025-11-25 12:04:43 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 25/11/2025
+2025-11-25 12:04:44 - elperuano_scraper - INFO - Campo cddesde llenado correctamente
+2025-11-25 12:04:45 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 25/11/2025
+2025-11-25 12:04:46 - elperuano_scraper - INFO - Campo cdhasta llenado correctamente
+2025-11-25 12:04:47 - elperuano_scraper - INFO - Botón de búsqueda clickeado
+2025-11-25 12:04:47 - elperuano_scraper - INFO - Esperando resultados AJAX...
+2025-11-25 12:04:53 - elperuano_scraper - INFO - Resultados AJAX cargados
+2025-11-25 12:04:56 - elperuano_scraper - INFO - Buscando enlace de descarga...
+2025-11-25 12:04:56 - elperuano_scraper - INFO - HTML guardado en page_content.html
+2025-11-25 12:04:56 - elperuano_scraper - INFO - Se encontraron 1 enlaces PDF
+2025-11-25 12:04:56 - elperuano_scraper - INFO - PDF encontrado: '' -> https://diariooficial.elperuano.pe/pdf/gabinete-ministros.pdf
+2025-11-25 12:04:56 - elperuano_scraper - WARNING - Usando primer PDF encontrado: https://diariooficial.elperuano.pe/pdf/gabinete-ministros.pdf
+2025-11-25 12:04:56 - elperuano_scraper - INFO - Descargando PDF: https://diariooficial.elperuano.pe/pdf/gabinete-ministros.pdf
+2025-11-25 12:04:56 - elperuano_scraper - ERROR - Error en descarga: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff73938a235
+	0x7ff7390e2630
+	0x7ff738e716dd
+	0x7ff738e6e228
+	0x7ff738e5eba9
+	0x7ff738e609d7
+	0x7ff738e5f160
+	0x7ff738e5e917
+	0x7ff738e5e5db
+	0x7ff738e5c145
+	0x7ff738e5c9dc
+	0x7ff738e759ea
+	0x7ff738f1c8be
+	0x7ff738ef2b0a
+	0x7ff738f1baba
+	0x7ff738ebb0ed
+	0x7ff738ebbf63
+	0x7ff7393b5d60
+	0x7ff7393afe8a
+	0x7ff7393d1005
+	0x7ff7390fd71e
+	0x7ff739104e1f
+	0x7ff7390eb7c4
+	0x7ff7390eb97f
+	0x7ff7390d18e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+2025-11-25 12:04:56 - elperuano_scraper - INFO - Screenshot de error guardado: error_final.png
+2025-11-25 12:04:56 - elperuano_scraper - INFO - Cerrando navegador
+2025-11-25 12:05:01 - elperuano_scraper - ERROR - Unexpected error: Error durante el scraping: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff73938a235
+	0x7ff7390e2630
+	0x7ff738e716dd
+	0x7ff738e6e228
+	0x7ff738e5eba9
+	0x7ff738e609d7
+	0x7ff738e5f160
+	0x7ff738e5e917
+	0x7ff738e5e5db
+	0x7ff738e5c145
+	0x7ff738e5c9dc
+	0x7ff738e759ea
+	0x7ff738f1c8be
+	0x7ff738ef2b0a
+	0x7ff738f1baba
+	0x7ff738ebb0ed
+	0x7ff738ebbf63
+	0x7ff7393b5d60
+	0x7ff7393afe8a
+	0x7ff7393d1005
+	0x7ff7390fd71e
+	0x7ff739104e1f
+	0x7ff7390eb7c4
+	0x7ff7390eb97f
+	0x7ff7390d18e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 324, in download_bulletin
+    success = self._download_pdf(download_url)
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 246, in _download_pdf
+    self.driver.get(url)
+    ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff73938a235
+	0x7ff7390e2630
+	0x7ff738e716dd
+	0x7ff738e6e228
+	0x7ff738e5eba9
+	0x7ff738e609d7
+	0x7ff738e5f160
+	0x7ff738e5e917
+	0x7ff738e5e5db
+	0x7ff738e5c145
+	0x7ff738e5c9dc
+	0x7ff738e759ea
+	0x7ff738f1c8be
+	0x7ff738ef2b0a
+	0x7ff738f1baba
+	0x7ff738ebb0ed
+	0x7ff738ebbf63
+	0x7ff7393b5d60
+	0x7ff7393afe8a
+	0x7ff7393d1005
+	0x7ff7390fd71e
+	0x7ff739104e1f
+	0x7ff7390eb7c4
+	0x7ff7390eb97f
+	0x7ff7390d18e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 25, in main
+    success = scraper.download_bulletin(date)
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 336, in download_bulletin
+    raise ScraperError(f"Error durante el scraping: {e}") from e
+src.exceptions.ScraperError: Error durante el scraping: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff73938a235
+	0x7ff7390e2630
+	0x7ff738e716dd
+	0x7ff738e6e228
+	0x7ff738e5eba9
+	0x7ff738e609d7
+	0x7ff738e5f160
+	0x7ff738e5e917
+	0x7ff738e5e5db
+	0x7ff738e5c145
+	0x7ff738e5c9dc
+	0x7ff738e759ea
+	0x7ff738f1c8be
+	0x7ff738ef2b0a
+	0x7ff738f1baba
+	0x7ff738ebb0ed
+	0x7ff738ebbf63
+	0x7ff7393b5d60
+	0x7ff7393afe8a
+	0x7ff7393d1005
+	0x7ff7390fd71e
+	0x7ff739104e1f
+	0x7ff7390eb7c4
+	0x7ff7390eb97f
+	0x7ff7390d18e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+2025-11-25 12:05:01 - elperuano_scraper - INFO - Scraper finished

@@ -1,0 +1,26 @@
+2025-11-25 14:57:49 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 14:57:49 - elperuano_scraper - WARNING - No se pudo obtener zona horaria de Perú: 'No time zone found with key America/Lima'
+2025-11-25 14:57:49 - elperuano_scraper - INFO - Usando fecha local: 25/11/2025
+2025-11-25 14:57:49 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-25 14:57:49 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-25 14:57:49 - elperuano_scraper - INFO - Detectando CHROME...
+2025-11-25 14:57:55 - elperuano_scraper - INFO - ✓ CHROME está disponible
+2025-11-25 14:58:01 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-25 14:58:01 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-25 14:58:09 - elperuano_scraper - INFO - Buscando documentos para: 25/11/2025
+2025-11-25 14:58:09 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 25/11/2025
+2025-11-25 14:58:10 - elperuano_scraper - INFO - ✓ Campo cddesde llenado
+2025-11-25 14:58:10 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 25/11/2025
+2025-11-25 14:58:11 - elperuano_scraper - INFO - ✓ Campo cdhasta llenado
+2025-11-25 14:58:12 - elperuano_scraper - INFO - ✓ Botón de búsqueda clickeado
+2025-11-25 14:58:12 - elperuano_scraper - INFO - Esperando resultados...
+2025-11-25 14:58:17 - elperuano_scraper - INFO - ✓ Resultados cargados
+2025-11-25 14:58:19 - elperuano_scraper - INFO - Buscando primer cuadernillo completo...
+2025-11-25 14:58:19 - elperuano_scraper - INFO - ✓ Cuadernillo encontrado: https://epdoc2.elperuano.pe/EpPo/Descarga.asp?Referencias=TkwyMDI1MTEyNQ==
+2025-11-25 14:58:19 - elperuano_scraper - INFO - Descargando PDF...
+2025-11-25 14:58:21 - elperuano_scraper - INFO - ✓ Descarga completa: 20251125.pdf (8.50 MB)
+2025-11-25 14:58:21 - elperuano_scraper - INFO - ============================================================
+2025-11-25 14:58:21 - elperuano_scraper - INFO - ✓ DESCARGA EXITOSA
+2025-11-25 14:58:21 - elperuano_scraper - INFO - ============================================================
+2025-11-25 14:58:21 - elperuano_scraper - INFO - Cerrando navegador...
+2025-11-25 14:58:26 - elperuano_scraper - INFO - ✓ Download completed successfully!

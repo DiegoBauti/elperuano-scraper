@@ -1,0 +1,179 @@
+2025-11-25 11:33:27 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 11:33:27 - elperuano_scraper - INFO - Searching for date: 25/11/2025
+2025-11-25 11:33:27 - elperuano_scraper - INFO - Initializing browser...
+2025-11-25 11:33:29 - elperuano_scraper - INFO - Navigating to https://diariooficial.elperuano.pe/Normas
+2025-11-25 11:33:33 - elperuano_scraper - INFO - Waiting for page to load...
+2025-11-25 11:33:38 - elperuano_scraper - INFO - Filling date inputs with: 25/11/2025
+2025-11-25 11:33:41 - elperuano_scraper - INFO - Found 'from' date input (cddesde)
+2025-11-25 11:33:43 - elperuano_scraper - INFO - 'From' date filled successfully
+2025-11-25 11:33:43 - elperuano_scraper - INFO - Found 'to' date input (cdhasta)
+2025-11-25 11:33:44 - elperuano_scraper - INFO - 'To' date filled successfully
+2025-11-25 11:33:45 - elperuano_scraper - INFO - Clicking search button
+2025-11-25 11:33:45 - elperuano_scraper - INFO - Found search button (btnBuscar)
+2025-11-25 11:33:46 - elperuano_scraper - ERROR - Error clicking search button: Message: element click intercepted: Element <button id="btnBuscar" name="btnBuscar" class="buttonaction">...</button> is not clickable at point (749, 18). Other element would receive the click: <a href="/Normas/normasactualizadas">...</a>
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7169ea235
+	0x7ff716742630
+	0x7ff7164d16dd
+	0x7ff7165324c9
+	0x7ff71652fe4e
+	0x7ff71652cd71
+	0x7ff71652bc10
+	0x7ff71651d3a8
+	0x7ff716552b0a
+	0x7ff71651cc36
+	0x7ff71657baba
+	0x7ff71651b0ed
+	0x7ff71651bf63
+	0x7ff716a15d60
+	0x7ff716a0fe8a
+	0x7ff716a31005
+	0x7ff71675d71e
+	0x7ff716764e1f
+	0x7ff71674b7c4
+	0x7ff71674b97f
+	0x7ff7167318e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+2025-11-25 11:33:46 - elperuano_scraper - ERROR - Error during scraping: Message: element click intercepted: Element <button id="btnBuscar" name="btnBuscar" class="buttonaction">...</button> is not clickable at point (749, 18). Other element would receive the click: <a href="/Normas/normasactualizadas">...</a>
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7169ea235
+	0x7ff716742630
+	0x7ff7164d16dd
+	0x7ff7165324c9
+	0x7ff71652fe4e
+	0x7ff71652cd71
+	0x7ff71652bc10
+	0x7ff71651d3a8
+	0x7ff716552b0a
+	0x7ff71651cc36
+	0x7ff71657baba
+	0x7ff71651b0ed
+	0x7ff71651bf63
+	0x7ff716a15d60
+	0x7ff716a0fe8a
+	0x7ff716a31005
+	0x7ff71675d71e
+	0x7ff716764e1f
+	0x7ff71674b7c4
+	0x7ff71674b97f
+	0x7ff7167318e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+2025-11-25 11:33:46 - elperuano_scraper - INFO - Closing browser
+2025-11-25 11:33:51 - elperuano_scraper - ERROR - Unexpected error: Scraping failed: Message: element click intercepted: Element <button id="btnBuscar" name="btnBuscar" class="buttonaction">...</button> is not clickable at point (749, 18). Other element would receive the click: <a href="/Normas/normasactualizadas">...</a>
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7169ea235
+	0x7ff716742630
+	0x7ff7164d16dd
+	0x7ff7165324c9
+	0x7ff71652fe4e
+	0x7ff71652cd71
+	0x7ff71652bc10
+	0x7ff71651d3a8
+	0x7ff716552b0a
+	0x7ff71651cc36
+	0x7ff71657baba
+	0x7ff71651b0ed
+	0x7ff71651bf63
+	0x7ff716a15d60
+	0x7ff716a0fe8a
+	0x7ff716a31005
+	0x7ff71675d71e
+	0x7ff716764e1f
+	0x7ff71674b7c4
+	0x7ff71674b97f
+	0x7ff7167318e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 344, in search_and_download
+    self._click_search_button()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 179, in _click_search_button
+    search_button.click()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 394, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button id="btnBuscar" name="btnBuscar" class="buttonaction">...</button> is not clickable at point (749, 18). Other element would receive the click: <a href="/Normas/normasactualizadas">...</a>
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7169ea235
+	0x7ff716742630
+	0x7ff7164d16dd
+	0x7ff7165324c9
+	0x7ff71652fe4e
+	0x7ff71652cd71
+	0x7ff71652bc10
+	0x7ff71651d3a8
+	0x7ff716552b0a
+	0x7ff71651cc36
+	0x7ff71657baba
+	0x7ff71651b0ed
+	0x7ff71651bf63
+	0x7ff716a15d60
+	0x7ff716a0fe8a
+	0x7ff716a31005
+	0x7ff71675d71e
+	0x7ff716764e1f
+	0x7ff71674b7c4
+	0x7ff71674b97f
+	0x7ff7167318e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 24, in main
+    success = scraper.search_and_download(current_date)
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 356, in search_and_download
+    raise ScraperError(f"Scraping failed: {str(e)}") from e
+src.exceptions.ScraperError: Scraping failed: Message: element click intercepted: Element <button id="btnBuscar" name="btnBuscar" class="buttonaction">...</button> is not clickable at point (749, 18). Other element would receive the click: <a href="/Normas/normasactualizadas">...</a>
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7169ea235
+	0x7ff716742630
+	0x7ff7164d16dd
+	0x7ff7165324c9
+	0x7ff71652fe4e
+	0x7ff71652cd71
+	0x7ff71652bc10
+	0x7ff71651d3a8
+	0x7ff716552b0a
+	0x7ff71651cc36
+	0x7ff71657baba
+	0x7ff71651b0ed
+	0x7ff71651bf63
+	0x7ff716a15d60
+	0x7ff716a0fe8a
+	0x7ff716a31005
+	0x7ff71675d71e
+	0x7ff716764e1f
+	0x7ff71674b7c4
+	0x7ff71674b97f
+	0x7ff7167318e8
+	0x7ff9e3f2e8d7
+	0x7ff9e53cc53c
+
+2025-11-25 11:33:51 - elperuano_scraper - INFO - Scraper finished

@@ -1,0 +1,20 @@
+2025-11-26 09:42:15 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-26 09:42:15 - elperuano_scraper - INFO - Modo de navegador: HEADLESS (sin ventana)
+2025-11-26 09:42:15 - elperuano_scraper - WARNING - No se pudo obtener zona horaria de Perú: 'No time zone found with key America/Lima'
+2025-11-26 09:42:15 - elperuano_scraper - INFO - Usando fecha local: 26/11/2025
+2025-11-26 09:42:15 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-26 09:42:15 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-26 09:42:15 - elperuano_scraper - INFO - Auto-detectando navegadores disponibles...
+2025-11-26 09:42:15 - elperuano_scraper - INFO - Probando CHROME...
+2025-11-26 09:42:19 - elperuano_scraper - INFO - ✓ CHROME disponible
+2025-11-26 09:42:23 - elperuano_scraper - INFO - Chrome configurado en modo HEADLESS
+2025-11-26 09:42:25 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-26 09:42:25 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-26 09:42:31 - elperuano_scraper - INFO - Buscando documentos para: 26/11/2025
+2025-11-26 09:42:31 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 26/11/2025
+2025-11-26 09:42:32 - elperuano_scraper - INFO - ✓ Campo cddesde llenado
+2025-11-26 09:42:33 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 26/11/2025
+2025-11-26 09:42:34 - elperuano_scraper - INFO - ✓ Campo cdhasta llenado
+2025-11-26 09:42:35 - elperuano_scraper - INFO - ✓ Botón de búsqueda clickeado
+2025-11-26 09:42:35 - elperuano_scraper - INFO - Esperando resultados...
+2025-11-26 09:43:09 - elperuano_scraper - INFO - Cerrando navegador...

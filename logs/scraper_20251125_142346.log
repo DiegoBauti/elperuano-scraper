@@ -1,0 +1,31 @@
+2025-11-25 14:23:46 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 14:23:46 - elperuano_scraper - INFO - Fecha actual en Perú: 25/11/2025
+2025-11-25 14:23:46 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-25 14:23:46 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-25 14:23:46 - elperuano_scraper - INFO - Detectando CHROME...
+2025-11-25 14:23:50 - elperuano_scraper - INFO - ✓ CHROME está disponible
+2025-11-25 14:23:56 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-25 14:23:56 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-25 14:24:03 - elperuano_scraper - INFO - Buscando documentos para: 25/11/2025
+2025-11-25 14:24:03 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 25/11/2025
+2025-11-25 14:24:04 - elperuano_scraper - INFO - ✓ Campo cddesde llenado
+2025-11-25 14:24:05 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 25/11/2025
+2025-11-25 14:24:06 - elperuano_scraper - INFO - ✓ Campo cdhasta llenado
+2025-11-25 14:24:07 - elperuano_scraper - INFO - ✓ Botón de búsqueda clickeado
+2025-11-25 14:24:07 - elperuano_scraper - INFO - Esperando resultados...
+2025-11-25 14:24:12 - elperuano_scraper - INFO - ✓ Resultados cargados
+2025-11-25 14:24:14 - elperuano_scraper - INFO - Buscando primer cuadernillo completo...
+2025-11-25 14:24:14 - elperuano_scraper - INFO - ✓ Cuadernillo encontrado: https://epdoc2.elperuano.pe/EpPo/Descarga.asp?Referencias=TkwyMDI1MTEyNQ==
+2025-11-25 14:24:14 - elperuano_scraper - INFO - Descargando PDF...
+2025-11-25 14:24:15 - elperuano_scraper - INFO - ✓ Descarga completa: 20251125.pdf (8.50 MB)
+2025-11-25 14:24:15 - elperuano_scraper - INFO - ============================================================
+2025-11-25 14:24:15 - elperuano_scraper - INFO - ✓ DESCARGA EXITOSA
+2025-11-25 14:24:15 - elperuano_scraper - INFO - ============================================================
+2025-11-25 14:24:15 - elperuano_scraper - INFO - Cerrando navegador...
+2025-11-25 14:24:20 - elperuano_scraper - INFO - ✓ Download completed successfully!
+2025-11-25 14:24:20 - elperuano_scraper - ERROR - ✗ Error uploading to Drive: name 'upload_to_drive' is not defined
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 33, in main
+    upload_to_drive(downloaded_file)
+    ^^^^^^^^^^^^^^^
+NameError: name 'upload_to_drive' is not defined. Did you mean: 'upload_drive'?

@@ -1,0 +1,43 @@
+2025-11-25 15:35:24 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 15:35:24 - elperuano_scraper - INFO - Fecha actual en Perú: 25/11/2025
+2025-11-25 15:35:24 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-25 15:35:24 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-25 15:35:24 - elperuano_scraper - INFO - Detectando CHROME...
+2025-11-25 15:35:28 - elperuano_scraper - INFO - ✓ CHROME está disponible
+2025-11-25 15:35:34 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-25 15:35:34 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-25 15:35:40 - elperuano_scraper - INFO - Buscando documentos para: 25/11/2025
+2025-11-25 15:35:40 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 25/11/2025
+2025-11-25 15:35:41 - elperuano_scraper - INFO - ✓ Campo cddesde llenado
+2025-11-25 15:35:41 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 25/11/2025
+2025-11-25 15:35:42 - elperuano_scraper - INFO - ✓ Campo cdhasta llenado
+2025-11-25 15:35:43 - elperuano_scraper - INFO - ✓ Botón de búsqueda clickeado
+2025-11-25 15:35:43 - elperuano_scraper - INFO - Esperando resultados...
+2025-11-25 15:35:48 - elperuano_scraper - INFO - ✓ Resultados cargados
+2025-11-25 15:35:50 - elperuano_scraper - INFO - Buscando primer cuadernillo completo...
+2025-11-25 15:35:50 - elperuano_scraper - INFO - ✓ Cuadernillo encontrado: https://epdoc2.elperuano.pe/EpPo/Descarga.asp?Referencias=TkwyMDI1MTEyNQ==
+2025-11-25 15:35:50 - elperuano_scraper - INFO - Descargando PDF...
+2025-11-25 15:35:51 - elperuano_scraper - INFO - ✓ Descarga completa: 20251125.pdf (8.50 MB)
+2025-11-25 15:35:51 - elperuano_scraper - INFO - ============================================================
+2025-11-25 15:35:51 - elperuano_scraper - INFO - ✓ DESCARGA EXITOSA: downloads\20251125.pdf
+2025-11-25 15:35:51 - elperuano_scraper - INFO - ============================================================
+2025-11-25 15:35:51 - elperuano_scraper - INFO - Cerrando navegador...
+2025-11-25 15:35:56 - elperuano_scraper - INFO - ✓ Download completed successfully!
+2025-11-25 15:35:57 - elperuano_scraper - ERROR - ✗ Error uploading to Drive: <HttpError 403 when requesting None returned "Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.". Details: "[{'message': 'Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.', 'domain': 'usageLimits', 'reason': 'storageQuotaExceeded'}]">
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 34, in main
+    upload_to_drive(downloaded_file)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\upload_drive.py", line 38, in upload_to_drive
+    ).execute()
+      ~~~~~~~^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 902, in execute
+    _, body = self.next_chunk(http=http, num_retries=num_retries)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 1022, in next_chunk
+    raise ResumableUploadError(resp, content)
+googleapiclient.errors.ResumableUploadError: <HttpError 403 when requesting None returned "Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.". Details: "[{'message': 'Service Accounts do not have storage quota. Leverage shared drives (https://developers.google.com/workspace/drive/api/guides/about-shareddrives), or use OAuth delegation (http://support.google.com/a/answer/7281227) instead.', 'domain': 'usageLimits', 'reason': 'storageQuotaExceeded'}]">

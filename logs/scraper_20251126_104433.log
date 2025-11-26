@@ -1,0 +1,39 @@
+2025-11-26 10:44:33 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-26 10:44:33 - elperuano_scraper - INFO - Modo de navegador: HEADLESS (sin ventana)
+2025-11-26 10:44:33 - elperuano_scraper - WARNING - No se pudo obtener zona horaria de Perú: 'No time zone found with key America/Lima'
+2025-11-26 10:44:33 - elperuano_scraper - INFO - Usando fecha local: 26/11/2025
+2025-11-26 10:44:33 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-26 10:44:33 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-26 10:44:33 - elperuano_scraper - INFO - Auto-detectando navegadores disponibles...
+2025-11-26 10:44:33 - elperuano_scraper - INFO - Probando CHROME...
+2025-11-26 10:44:37 - elperuano_scraper - INFO - ✓ CHROME disponible
+2025-11-26 10:44:41 - elperuano_scraper - INFO - Chrome configurado en modo HEADLESS
+2025-11-26 10:44:42 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-26 10:44:42 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-26 10:44:49 - elperuano_scraper - INFO - Buscando primer cuadernillo completo...
+2025-11-26 10:44:49 - elperuano_scraper - ERROR - Error al descargar cuadernillo: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[data-tipo='CuNl']"}
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff776aca235
+	0x7ff776822630
+	0x7ff7765b16dd
+	0x7ff77660a27e
+	0x7ff77660a58c
+	0x7ff77665ed77
+	0x7ff77665baba
+	0x7ff7765fb0ed
+	0x7ff7765fbf63
+	0x7ff776af5d60
+	0x7ff776aefe8a
+	0x7ff776b11005
+	0x7ff77683d71e
+	0x7ff776844e1f
+	0x7ff77682b7c4
+	0x7ff77682b97f
+	0x7ff7768118e8
+	0x7ffbb3c5e8d7
+	0x7ffbb508c53c
+
+2025-11-26 10:44:49 - elperuano_scraper - INFO - Cerrando navegador...
+2025-11-26 10:44:54 - elperuano_scraper - ERROR - ✗ Download failed

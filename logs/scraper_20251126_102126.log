@@ -1,0 +1,33 @@
+2025-11-26 10:21:26 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-26 10:21:26 - elperuano_scraper - INFO - Modo de navegador: HEADLESS (sin ventana)
+2025-11-26 10:21:26 - elperuano_scraper - WARNING - No se pudo obtener zona horaria de Perú: 'No time zone found with key America/Lima'
+2025-11-26 10:21:26 - elperuano_scraper - INFO - Usando fecha local: 26/11/2025
+2025-11-26 10:21:26 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-26 10:21:26 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-26 10:21:26 - elperuano_scraper - INFO - Auto-detectando navegadores disponibles...
+2025-11-26 10:21:26 - elperuano_scraper - INFO - Probando CHROME...
+2025-11-26 10:21:29 - elperuano_scraper - INFO - ✓ CHROME disponible
+2025-11-26 10:21:33 - elperuano_scraper - INFO - Chrome configurado en modo HEADLESS
+2025-11-26 10:21:35 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-26 10:21:35 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-26 10:21:41 - elperuano_scraper - INFO - Buscando documentos para: 26/11/2025
+2025-11-26 10:21:41 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 26/11/2025
+2025-11-26 10:21:42 - elperuano_scraper - INFO - ✓ Campo cddesde llenado
+2025-11-26 10:21:42 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 26/11/2025
+2025-11-26 10:21:43 - elperuano_scraper - INFO - ✓ Campo cdhasta llenado
+2025-11-26 10:21:44 - elperuano_scraper - INFO - ✓ Botón de búsqueda clickeado
+2025-11-26 10:21:44 - elperuano_scraper - INFO - Esperando resultados...
+2025-11-26 10:21:50 - elperuano_scraper - INFO - ✓ Resultados cargados
+2025-11-26 10:21:52 - elperuano_scraper - INFO - Buscando primer cuadernillo completo...
+2025-11-26 10:21:52 - elperuano_scraper - INFO - ✓ Cuadernillo encontrado: https://epdoc2.elperuano.pe/EpPo/Descarga.asp?Referencias=TkwyMDI1MTEyNg==
+2025-11-26 10:21:52 - elperuano_scraper - INFO - Descargando PDF...
+2025-11-26 10:21:56 - elperuano_scraper - INFO - ✓ Descarga completa: 20251126.pdf (25.71 MB)
+2025-11-26 10:21:56 - elperuano_scraper - INFO - ============================================================
+2025-11-26 10:21:56 - elperuano_scraper - INFO - ✓ DESCARGA EXITOSA: downloads\20251126.pdf
+2025-11-26 10:21:56 - elperuano_scraper - INFO - ============================================================
+2025-11-26 10:21:56 - elperuano_scraper - INFO - Procediendo a subir archivo...
+2025-11-26 10:22:06 - elperuano_scraper - INFO - ✓ Subida exitosa, borrando archivo local...
+2025-11-26 10:22:06 - elperuano_scraper - INFO - 🗑️  Archivo borrado: 20251126.pdf
+2025-11-26 10:22:06 - elperuano_scraper - INFO - Cerrando navegador...
+2025-11-26 10:22:10 - elperuano_scraper - INFO - ✓ Download completed successfully!
+2025-11-26 10:22:10 - elperuano_scraper - INFO - ✓ Upload and cleanup completed!

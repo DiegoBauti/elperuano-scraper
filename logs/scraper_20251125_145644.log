@@ -1,0 +1,39 @@
+2025-11-25 14:56:44 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 14:56:44 - elperuano_scraper - WARNING - No se pudo obtener zona horaria de Perú: 'No time zone found with key America/Lima'
+2025-11-25 14:56:44 - elperuano_scraper - INFO - Usando fecha local: 25/11/2025
+2025-11-25 14:56:44 - elperuano_scraper - INFO - Iniciando navegador...
+2025-11-25 14:56:44 - elperuano_scraper - INFO - Configurando navegador: AUTO
+2025-11-25 14:56:44 - elperuano_scraper - INFO - Detectando CHROME...
+2025-11-25 14:56:49 - elperuano_scraper - INFO - ✓ CHROME está disponible
+2025-11-25 14:56:55 - elperuano_scraper - INFO - ✓ Chrome configurado
+2025-11-25 14:56:55 - elperuano_scraper - INFO - Navegando a https://diariooficial.elperuano.pe/Normas
+2025-11-25 14:57:03 - elperuano_scraper - INFO - Buscando documentos para: 25/11/2025
+2025-11-25 14:57:03 - elperuano_scraper - INFO - Llenando campo cddesde con fecha: 25/11/2025
+2025-11-25 14:57:04 - elperuano_scraper - INFO - ✓ Campo cddesde llenado
+2025-11-25 14:57:04 - elperuano_scraper - INFO - Llenando campo cdhasta con fecha: 25/11/2025
+2025-11-25 14:57:05 - elperuano_scraper - INFO - ✓ Campo cdhasta llenado
+2025-11-25 14:57:06 - elperuano_scraper - INFO - ✓ Botón de búsqueda clickeado
+2025-11-25 14:57:06 - elperuano_scraper - INFO - Esperando resultados...
+2025-11-25 14:57:12 - elperuano_scraper - INFO - ✓ Resultados cargados
+2025-11-25 14:57:14 - elperuano_scraper - INFO - Buscando primer cuadernillo completo...
+2025-11-25 14:57:14 - elperuano_scraper - INFO - ✓ Cuadernillo encontrado: https://epdoc2.elperuano.pe/EpPo/Descarga.asp?Referencias=TkwyMDI1MTEyNQ==
+2025-11-25 14:57:14 - elperuano_scraper - INFO - Descargando PDF...
+2025-11-25 14:57:15 - elperuano_scraper - INFO - ✓ Descarga completa: 20251125.pdf (8.50 MB)
+2025-11-25 14:57:15 - elperuano_scraper - INFO - ============================================================
+2025-11-25 14:57:15 - elperuano_scraper - INFO - ✓ DESCARGA EXITOSA
+2025-11-25 14:57:15 - elperuano_scraper - INFO - ============================================================
+2025-11-25 14:57:15 - elperuano_scraper - INFO - Cerrando navegador...
+2025-11-25 14:57:20 - elperuano_scraper - INFO - ✓ Download completed successfully!
+2025-11-25 14:57:20 - elperuano_scraper - ERROR - ✗ Error uploading to Drive: [Errno 2] No such file or directory: 'credentials.json'
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 34, in main
+    upload_to_drive(downloaded_file)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\upload_drive.py", line 36, in upload_to_drive
+    service = get_service()
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\upload_drive.py", line 25, in get_service
+    flow = InstalledAppFlow.from_client_secrets_file("credentials.json", SCOPES)
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\.venv\Lib\site-packages\google_auth_oauthlib\flow.py", line 198, in from_client_secrets_file
+    with open(client_secrets_file, "r") as json_file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'credentials.json'

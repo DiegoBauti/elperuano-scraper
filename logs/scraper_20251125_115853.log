@@ -1,0 +1,18 @@
+2025-11-25 11:58:53 - elperuano_scraper - INFO - Starting El Peruano Scraper
+2025-11-25 11:58:53 - elperuano_scraper - INFO - Searching for date: 25/11/2025
+2025-11-25 11:58:53 - elperuano_scraper - ERROR - Unexpected error: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'Config'
+Traceback (most recent call last):
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\main.py", line 21, in main
+    scraper = ElPeruanoScraper(config)
+  File "C:\Users\diego\OneDrive\Escritorio\New folder (3)\elperuano-scraper\src\scraper.py", line 28, in __init__
+    self.download_dir = Path(download_dir)
+                        ~~~~^^^^^^^^^^^^^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 503, in __init__
+    super().__init__(*args)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\diego\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 132, in __init__
+    raise TypeError(
+    ...<2 lines>...
+        f"not {type(path).__name__!r}")
+TypeError: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'Config'
+2025-11-25 11:58:54 - elperuano_scraper - INFO - Scraper finished
