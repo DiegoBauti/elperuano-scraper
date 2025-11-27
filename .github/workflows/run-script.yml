@@ -40,7 +40,7 @@ jobs:
             Archivo subido a Google Drive
             
             Ver logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          to: ${{ secrets.NOTIFICATION_EMAIL }}
+          to: ${{ secrets.EMAIL_USER }}
           from: Scraper El Peruano
       
       - name: Send failure email
@@ -60,5 +60,5 @@ jobs:
             
             Revisa los logs aqui:
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          to: ${{ secrets.NOTIFICATION_EMAIL }}
+          to: ${{ secrets.EMAIL_USER }}
           from: Scraper El Peruano
